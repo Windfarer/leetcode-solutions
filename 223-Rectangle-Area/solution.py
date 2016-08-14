@@ -20,8 +20,6 @@ class Solution(object):
         p2 = bool(y<lower)
         q2 = bool(lower<=y<=upper)
         r2 = bool(y>upper)
-        # if (p1 and q1) or (r1 and r2):
-        #     return 0
         if p1 and q2:
             return y - lower
         elif p1 and r2:
