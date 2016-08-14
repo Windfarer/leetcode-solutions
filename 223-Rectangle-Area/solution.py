@@ -11,12 +11,7 @@ class Solution(object):
         :type H: int
         :rtype: int
         """
-        sa = (C-A)*(D-B)
-        sb = (G-E)*(H-F)
-        x = self.get(A,C,E,G)
-        y = self.get(B,D,F,H)
-        sc = x*y
-        return sa+sb-sc
+        return (C-A)*(D-B)+(G-E)*(H-F)-self.get(A,C,E,G)*self.get(B,D,F,H)
         
     def get(self, lower, upper, x, y):
         p1 = bool(x<lower)
