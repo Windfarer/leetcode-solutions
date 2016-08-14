@@ -14,7 +14,6 @@ class Solution(object):
         return (C-A)*(D-B)+(G-E)*(H-F)-self.get(A,C,E,G)*self.get(B,D,F,H)
         
     def get(self, lower, upper, x, y):
-        p1 = bool()
         if x<lower and lower<=y<=upper:
             return y - lower
         elif x<lower and y>upper:
