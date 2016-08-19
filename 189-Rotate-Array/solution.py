@@ -16,14 +16,12 @@ class Solution(object):
             nums[i] = nums[n-1-p-i]
             nums[n-1-p-i] = tmp
             i += 1
-        print nums
         i = 0
         while n-p+i < n-1-i:
             tmp = nums[n-p+i]
             nums[n-p+i] = nums[n-1-i]
             nums[n-1-i] = tmp
             i += 1
-        print nums
         i = 0
         while i < n-1-i:
             tmp = nums[i]
