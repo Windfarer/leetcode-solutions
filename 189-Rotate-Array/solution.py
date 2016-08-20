@@ -5,6 +5,11 @@ class Solution(object):
         :type k: int
         :rtype: void Do not return anything, modify nums in-place instead.
         """
+        ## another solution
+        # n = len(nums)
+        # p = k % n
+        # for i in range(p):
+        #     nums.insert(0, nums.pop())
         n = len(nums)
         tmp = None
         i = 0
