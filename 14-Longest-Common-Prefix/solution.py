@@ -15,7 +15,6 @@ class Solution(object):
             try:
                 for j in range(n):
                     cur = strs[j][i]
-                    print cur
                     if cur != p:
                         return "".join(rv)
             except IndexError:
