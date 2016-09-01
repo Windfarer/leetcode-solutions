@@ -6,14 +6,14 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        lst = [False,False]+[True]*(max(2,n)-2)
+        lst = [0,0]+[1]*(max(2,n)-2)
         for i in range(int(sqrt(n))+1):
-            if lst[i] is True:
+            if lst[i] == 1:
                 k = 2*i
                 while k < n:
-                    lst[k] = False
+                    lst[k] = 0
                     k = k + i
-        return lst.count(True)
+        return lst.count(1)
                     
             
             
