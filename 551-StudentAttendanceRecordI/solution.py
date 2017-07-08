@@ -15,6 +15,6 @@ class Solution(object):
                 a_count += 1
             if i != 'L':
                 l_count = 0
-        if a_count > 1:
-            return False
+            if a_count > 1:
+                return False
         return True
